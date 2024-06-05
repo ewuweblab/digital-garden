@@ -22,14 +22,23 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body>
 		
+		<!-- wrapper -->
+		<main>
 
-		<!-- Navigation component -->
-		<Navigation />
+			<!-- Navigation component -->
+			<Navigation />
 
-        <slot />
 
-		<!-- Footer component -->	
-		<Footer />
+			<!-- Astro Slot component -->
+        	<slot />
+
+
+			<!-- Footer component -->	
+			<Footer />
+
+		</main>
+
+		
 
 		<!-- Client Side Scripts -->
 		<script>
